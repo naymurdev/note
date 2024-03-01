@@ -1,15 +1,10 @@
 "use client";
 
-import {
-  type Dispatch,
-  type ReactNode,
-  type SetStateAction,
-  createContext,
-} from "react";
+import { Dispatch, ReactNode, SetStateAction, createContext } from "react";
 import { ThemeProvider, useTheme } from "next-themes";
 import { Toaster } from "sonner";
 import { Analytics } from "@vercel/analytics/react";
-import useLocalStorage from "@/hooks/use-local-storage";
+import useLocalStorage from "@/lib/hooks/use-local-storage";
 
 export const AppContext = createContext<{
   font: string;
@@ -32,9 +27,10 @@ export default function Providers({ children }: { children: ReactNode }) {
   return (
     <ThemeProvider
       attribute="class"
-      enableSystem
-      disableTransitionOnChange
-      defaultTheme="system"
+      value={{
+        light: "light-theme",
+        dark: "dark-theme",
+      }}
     >
       <AppContext.Provider
         value={{

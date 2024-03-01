@@ -1,30 +1,23 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Default",
   "compilerOptions": {
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "alwaysStrict": false,
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "resolveJsonModule": true,
-    "target": "ESNext",
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "noEmit": true,
+    "composite": false,
     "declaration": true,
     "declarationMap": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
-
-    "downlevelIteration": true,
-    "allowJs": true,
-    "isolatedModules": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "incremental": true,
-    "tsBuildInfoFile": ".tsbuildinfo"
+    "strict": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "src/tests"]
+  "exclude": ["node_modules"]
 }
