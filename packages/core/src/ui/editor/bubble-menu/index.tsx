@@ -87,8 +87,7 @@ export const EditorBubbleMenu: FC<EditorBubbleMenuProps> = (props) => {
   return (
     <BubbleMenu
       {...bubbleMenuProps}
-      className="novel-flex novel-w-fit novel-divide-x novel-divide-stone-200 novel-rounded novel-border novel-border-stone-200 novel-bg-white novel-shadow-xl"
-    >
+      className="novel-flex novel-w-fit novel-divide-x novel-divide-stone-200 novel-rounded novel-border novel-border-stone-200 novel-bg-white novel-shadow-xl">
       <NodeSelector
         editor={props.editor}
         isOpen={isNodeSelectorOpen}
@@ -113,8 +112,7 @@ export const EditorBubbleMenu: FC<EditorBubbleMenuProps> = (props) => {
             key={index}
             onClick={item.command}
             className="novel-p-2 novel-text-stone-600 hover:novel-bg-stone-100 active:novel-bg-stone-200"
-            type="button"
-          >
+            type="button">
             <item.icon
               className={cn("novel-h-4 novel-w-4", {
                 "novel-text-blue-500": item.isActive(),
