@@ -168,6 +168,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@excalidraw/excalidraw':
+        specifier: ^0.17.3
+        version: 0.17.3(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-popover':
         specifier: ^1.0.6
         version: 1.0.6(@types/react-dom@18.0.11)(@types/react@18.0.28)(react-dom@18.2.0)(react@18.2.0)
@@ -813,6 +816,16 @@ packages:
   /@eslint/js@8.36.0:
     resolution: {integrity: sha512-lxJ9R5ygVm8ZWgYdUweoq5ownDlJ4upvoWmO4eLxBYHdMo+vZ/Rx0EN6MbKWDJOSUGrqJy2Gt+Dyv/VKml0fjg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: false
+
+  /@excalidraw/excalidraw@0.17.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-t+0sR30AboKcINt0WUJmSAC1cJy6npO37j/zONvuWvSh6XDOGoL1E0L+WYKJMBzp4wnOQhRIghQJmdfktQlO8w==}
+    peerDependencies:
+      react: ^17.0.2 || ^18.2.0
+      react-dom: ^17.0.2 || ^18.2.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@floating-ui/core@1.4.1:

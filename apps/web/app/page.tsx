@@ -1,7 +1,9 @@
 import Menu from "@/ui/menu";
 import Editor from "@/ui/editor";
-import Draw from "@/ui/draw";
-
+import dynamic from "next/dynamic";
+const Draw = dynamic(() => import("@/ui/draw"), {
+  ssr: false,
+});
 export default function Page() {
   return (
     <div className="h-screen ">
