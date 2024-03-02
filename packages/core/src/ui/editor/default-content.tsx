@@ -15,14 +15,14 @@ export const defaultEditorContent = {
             {
               type: "link",
               attrs: {
-                href: "https://github.com/steven-tey/novel",
+                href: "https://github.com/naymurdev/note",
                 target: "_blank",
                 class:
                   "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
               },
             },
           ],
-          text: "Novel",
+          text: "Novel V2.0",
         },
         {
           type: "text",
