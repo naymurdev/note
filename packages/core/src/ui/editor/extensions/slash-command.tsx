@@ -217,6 +217,15 @@ const getSuggestionItems = ({ query }: { query: string }) => {
         input.click();
       },
     },
+    {
+      title: "Send Feedback",
+      description: "Let me know how we can improve.",
+      icon: <MessageSquarePlus size={18} />,
+      command: ({ editor, range }: CommandProps) => {
+        editor.chain().focus().deleteRange(range).run();
+        window.open("https://github.com/naymurdev/note", "_blank");
+      },
+    },
   ].filter((item) => {
     if (typeof query === "string" && query.length > 0) {
       const search = query.toLowerCase();
