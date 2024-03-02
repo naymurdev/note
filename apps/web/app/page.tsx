@@ -13,7 +13,7 @@ export default function Page() {
         <Github />
       </a> */}
       <Menu />
-      <div className="grid h-full grid-cols-2">
+      <div className="grid h-screen grid-cols-2">
         <Editor />
         <Draw />
       </div>
